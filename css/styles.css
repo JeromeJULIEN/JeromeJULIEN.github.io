@@ -1,0 +1,357 @@
+body {
+    background:#eee;
+    font-family: 'Asap', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-left:250px;
+    background:#fff;
+    box-shadow:0 0 5px rgba(0,0,0,.1);
+  
+}
+
+.header {
+    float: left;
+    margin-left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #f5f5f5;
+    border-right: 1px solid rgba(0,0,0,.1);
+    position: fixed;
+}
+
+.search {
+    padding: 1rem;
+    background: #f39c12;
+}
+
+.search-input {
+    padding: .75rem 1rem;
+    border: none;
+    font-size:1.2em;
+    width:100%;
+    border-radius:2rem;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    border-bottom:3px solid #f39c12;
+    padding-bottom:1rem;
+}
+
+.nav {
+    padding: 2rem;
+}
+
+.nav-links {
+    margin-top: 2rem;
+}
+
+.nav-item {
+    font-size: 1.2rem;
+    height: 3rem;
+    background-color: #ccc;
+    margin: 0.3rem 0;
+    border-radius: 0.3rem;
+    line-height: 3rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #f39c12;
+}
+
+.nav-item__accueil {
+    border-bottom:2px solid #f39c12;
+}
+
+.page {
+    padding: 5rem 2rem 2rem;
+
+}
+
+.content-focus {
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.content-titles {
+    width: 35%;
+    font-size: 2.5em;
+    margin-right: 2rem;
+    text-align: right;
+    border-top: 3px solid #f39c12;
+    font-weight: bold;
+}
+
+.content-title--main {
+    margin: 1rem 0;
+   
+}
+
+.content-title--sub {
+    font-size: 0.8em;
+    color: #bbb;
+}
+
+
+.content-title {
+    max-width: 450px;
+    margin-left: auto;
+}
+
+.content-picture {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.picture-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 0.5em;
+    position: absolute;
+    width: 100%;
+}
+
+.rounded {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.picture {
+    width: 100%;
+    display: block;
+}
+
+.content-quote {
+    border-top: 3px solid #ccc;
+    margin-top: 2rem;
+}
+
+.content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.content h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.content ol {
+    list-style-type: decimal;
+    font-size: 1.1em;
+    margin-left: 1.5em;
+    line-height: 1.5;
+}
+
+.articles {
+    margin-top: 5rem;
+}
+
+.articles-container {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;justify-content: space-between;
+}
+
+.card {
+    margin-bottom: 2rem;
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    margin: 2rem 1rem;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+.card-content p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    
+}
+
+.card-footer {
+    margin: 2rem 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f39c12;
+    border: 3px solid #f39c12;
+    border-radius: 2rem;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #f39c12;
+}
+
+.footer {
+    background: #111;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #aaa;
+}
+
+/*
+    Styles pour les écrans de moins de 1200px de large :
+*/
+
+@media (max-width:1200px) and (min-width:901px) { /*j'imagine que la syntaxe n'est pas la bonne mais sans faire comme ca, les media queries 1200px écrasaient celle du 900px. J'ai pas trouvé comment faire autrement*/
+
+    .page {
+        padding: 2rem;
+    
+    }
+    
+    .content-focus {
+        display:block;
+    }
+
+    .content-titles {
+        width: auto;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .content-title {
+        max-width: none;
+    }
+
+    .content-picture {
+        width: auto;
+    }
+
+    .articles-container {
+      
+        display:block;
+    }
+    .card {
+        width:auto;
+    }
+
+   
+}
+
+
+
+/*
+    Styles pour les écrans de moins de 900px de large :
+*/
+
+@media (max-width: 900px) {
+
+    .header {
+        position:static;
+        width:auto;
+        height: auto;
+        float:none;
+        margin-left:0;
+        
+    }
+
+    .content-focus {
+        display:block;
+    }
+
+    .content-titles {
+        width: auto;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .content-title {
+        max-width: none;
+    }
+
+    .content-picture {
+        width: auto;
+    }
+
+
+    .container {
+        width:96%;
+        padding-left:0;
+    }
+
+    .page {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav .title {
+        display:none;
+    }
+
+    .nav-links {
+        margin-top:0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-item {
+     
+        width:calc(33.3333% - .5rem);
+        text-align: center;
+        display: inline;
+    }
+
+    .nav-item-link {
+        margin-bottom: 0;
+    }
+
+    .content-focus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    
+    }
+
+    .articles-container {
+      
+        display:block;
+    }
+    .card {
+        width:auto;
+    }
+}
+
+
+*/
