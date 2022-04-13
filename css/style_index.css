@@ -1,0 +1,129 @@
+body {
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2vh;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+  
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    height: 100%;
+    outline: solid 8px rgb(165, 0, 0);
+    border-radius: 3em;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+.container__index {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(154, 0, 0, 0.2)),
+    url(../img/fond_ecran.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.container__quizz{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(154, 0, 0, 0.2)),
+    url(../img/fond_ecran_sans_arthur.jpg) ;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+}
+
+.header__h1 {
+    font-size: 1.6em;
+    word-wrap:break-word ;
+}
+
+.main__h2 {
+    font-size: 1.4em;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 1em 0;
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+h3{
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+.btn{
+    background-color:rgba(201, 26, 26, 0.5);
+    outline: 5px solid rgb(165, 0, 0);
+    border-radius: 1em;
+    font-size: 1.8em;
+    margin: 1rem;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+    text-align: center;
+}
+
+.btn:hover {
+    outline: 10px solid rgb(165, 0, 0);
+    color: black;
+}
+
+.reponse{
+    background-color:rgba(201, 26, 26, 0.5);
+    outline: 5px solid rgb(255, 255, 255);
+    border-radius: 2em;
+    font-size: 1.5em;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 80%;
+    height: 0,06vh;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.reponse:hover{
+    outline: 10px solid rgb(165, 0, 0);
+    color: black;
+}
+
+.reponse__dispo{
+    font-size: 1em;
+}
+
+.saisi {
+    width: 90%;
+    background-color:rgba(255, 255, 255, 0.6);
+    height: 2em;
+    color: rgb(26, 26, 26);
+    font-size: 2em;
+    border-radius: 1rem;
+    border:none ; 
+    text-align: center;  
+}
