@@ -17,14 +17,19 @@
         </header>
         <main class="main">
             <h2 class="main__h2">Sais tu quelle est l'écurie de f1 préférée d'Arthur ?</h2>
-            <div class="reponse">Mercedes</div>
-            <div class="reponse">Redbull</div>
-            <div class="reponse">Ferrari</div>
-
+            <form class="form" method="get" action="">
+                <input type="radio" id="mercedes" name="quelle_ecurie" value="1">
+                <label class="btn" for="mercedes">Mercedes</label>
+                <input type="radio" id="redbull" name="quelle_ecurie" value="2">
+                <label class="btn" for="redbull">Redbull</label>
+                <input type="radio" id="ferrari" name="quelle_ecurie" value="3">
+                <label class="btn" for="ferrari">Ferrari</label>
+                <button class="btn btn_submit" type="submit">Valider</button>
+            </form>
         </main>
         <footer class="footer">
             <h3>Super ! On passe à la question suivante</h3>
-            <a class="btn" href="quizz_3.html">Appuie ici</a>
+            <a class="btn btn_next" href="quizz_3.html">Appuie ici</a>
         </footer>
     </container>
 </body>
