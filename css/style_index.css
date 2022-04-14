@@ -1,14 +1,13 @@
 body {
     text-align: center;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
     color: rgb(255, 255, 255);
     padding: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
-    height: 100vh;
+    
   
 }
 
@@ -18,8 +17,8 @@ body {
     align-items: center;
     justify-content:flex-start;
     width: 100%;
-    height: 100%;
-    outline: solid 8px rgb(165, 0, 0);
+    min-height: 90vh;
+    border: solid 8px rgb(165, 0, 0);
     border-radius: 3em;
     flex-grow: 1;
     padding: 0.5em;
@@ -72,13 +71,13 @@ body {
 }
 
 h3{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: lighter;
 }
 
 .btn{
     background-color:rgba(201, 26, 26, 0.5);
-    outline: 5px solid rgb(165, 0, 0);
+    border: 5px solid rgb(165, 0, 0);
     border-radius: 1em;
     font-size: 1.8em;
     margin: 1rem;
@@ -90,13 +89,14 @@ h3{
 }
 
 .btn:hover {
-    outline: 10px solid rgb(165, 0, 0);
+    border: 5px solid rgb(99, 0, 0);
+    background-color:rgba(201, 26, 26, 0.7);
     color: black;
 }
 
 .reponse{
     background-color:rgba(201, 26, 26, 0.5);
-    outline: 5px solid rgb(255, 255, 255);
+    border: 5px solid rgb(255, 255, 255);
     border-radius: 2em;
     font-size: 1.5em;
     margin: 0.5em;
@@ -109,7 +109,7 @@ h3{
 }
 
 .reponse:hover{
-    outline: 10px solid rgb(165, 0, 0);
+    border: 5px solid rgb(165, 0, 0);
     color: black;
 }
 
