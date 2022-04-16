@@ -72,6 +72,10 @@ body {
     width: 90%;
 }
 
+#footer1, #footer2, #footer3 {
+    display: none;
+}
+
 h3{
     font-size: 1.2em;
     font-weight: lighter;
@@ -185,3 +189,4 @@ a:hover {
     padding: 0.5em;
     font-family: 'Rubik Mono One', sans-serif;
 }
+
