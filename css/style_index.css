@@ -27,14 +27,14 @@ body {
 .container__index {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(154, 0, 0, 0.2)),
     url(../img/fond_ecran.jpg) ;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 
 .container__quizz{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(154, 0, 0, 0.2)),
     url(../img/fond_ecran_sans_arthur.jpg) ;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 
