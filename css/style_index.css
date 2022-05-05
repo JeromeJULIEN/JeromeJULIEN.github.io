@@ -190,4 +190,7 @@ a:hover {
     font-family: 'Rubik Mono One', sans-serif;
 }
 
-
+input::placeholder {
+    color:  rgb(165, 0, 0);
+    font-size: 0.8em;
+}
